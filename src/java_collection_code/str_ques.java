@@ -18,5 +18,6 @@ public class str_ques {
                .map(word -> new StringBuilder(word).reverse().toString())
                .collect(Collectors.joining(" "));
          System.out.println("String after reversing each word: " + result2);
+
     }
 }

@@ -18,5 +18,6 @@ public class array {
         for (int i =0; i<lt.length; i++){
             System.out.print(lt[i] + " ");
         }
+
     }
 }

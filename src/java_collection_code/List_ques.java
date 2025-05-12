@@ -28,6 +28,5 @@ public class List_ques {
         List<Integer> lt4 = lt2.stream().distinct().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         System.out.println("Distinct and sorted list in Descending order: " + lt4);
 
-
     }
 }
