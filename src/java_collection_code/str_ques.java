@@ -17,7 +17,11 @@ public class str_ques {
        String result2 = Arrays.stream(str.split(" "))
                .map(word -> new StringBuilder(word).reverse().toString())
                .collect(Collectors.joining(" "));
-         System.out.println("String after reversing each word: " + result2);
+         System.out.println("String after reversing each word: " + result2);  // o/p = avaJ si a gnimmargorp egaugnal
+
+
+        String result3 = new StringBuilder(str).reverse().toString();
+        System.out.println("String after reversing the whole line: " + result3);  // o/p = egaugnal gnimmargorp a si avaJ
 
     }
 }
