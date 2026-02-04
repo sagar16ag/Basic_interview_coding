@@ -22,6 +22,23 @@ public class array {
         for (int i =0; i<lt.length; i++){
             System.out.print(lt[i] + " ");
         }
+        System.out.println();
+        System.out.println("////////////////////////////////////////////////////////");
+        //Shift all 0's to Left side of array
 
+        int index1 = lt.length - 1;
+        for(int i = lt.length - 1; i >= 0; i--){
+            if(lt[i] != 0){
+                lt[index1] = lt[i];
+                index1--;
+            }
+        }
+        while(index1 >= 0) {
+            lt[index1] = 0;
+            index1--;
+        }
+        for (int i =0; i<lt.length; i++){
+            System.out.print(lt[i] + " ");
+        }
     }
 }
