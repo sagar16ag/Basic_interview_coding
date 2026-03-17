@@ -12,7 +12,7 @@ public class charcount {
 
         //program to count the number of characters in each word
 
-        List<String> list1 = Arrays.asList("Hello", "World", "Java", "Programming");
+        List<String> list1 = List.of("Hello", "World", "Java", "Programming");
         Map<Object, Long> map1 = list1.stream()
                 .collect(Collectors.groupingBy(String::length, Collectors.counting()));
         map1.forEach((k, v) -> System.out.println(k + " : " + v));

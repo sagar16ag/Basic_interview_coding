@@ -29,7 +29,8 @@ public class Employees_by_Part_1 {
 
         // Find the count of male and female employees present in the organization.
 
-        Map<String,Long> noOfMaleAndFemaleEmployees = empList.stream().collect(Collectors.groupingBy(employee_entity::getGender, Collectors.counting()));
+        Map<String,Long> noOfMaleAndFemaleEmployees = empList.stream()
+                                        .collect(Collectors.groupingBy(employee_entity::getGender, Collectors.counting()));
         noOfMaleAndFemaleEmployees.forEach((k, v) -> System.out.println(k + " : " + v));
 
         System.out.println("////////////////////////////////////////////////////////");
@@ -52,7 +53,7 @@ public class Employees_by_Part_1 {
 
         // Print employee details whose age is greater than 28
 
-        Map<Integer, List<employee_entity>> agegraterthan28 = empList.stream().filter(e -> e.getAge() > 28)
+        Map<Integer, List<employee_entity>> agegraterthan28 = empList.stream().filter(e -> e.getAge() > 28 && e.getAge() < 32)
                 .collect(Collectors.groupingBy(employee_entity::getAge));
         agegraterthan28.forEach((k,v) -> System.out.println(k+ " : " +v));
 

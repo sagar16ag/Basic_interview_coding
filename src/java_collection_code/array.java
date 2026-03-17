@@ -1,10 +1,21 @@
 package java_collection_code;
 
+import java.util.Arrays;
+
 public class array {
 
     public static void main(String[] args) {
 
         //Shift all 0's to Right side of array
+
+        String[] arr = {"apple", "dog", "cat", "pen", "ball"};
+
+        Arrays.stream(arr)
+                .filter(s -> s.contains("a"))
+                .forEach(System.out::println);
+
+        System.out.println();
+        System.out.println("////////////////////////////////////////////////////////");
 
         Integer lt[] = {0,0,1,0,-3,12,0,4,5,0,6,0,7,8,-9,0,0,0,0,0,0,1,0,0,20,30,0,0,0,0,1};
 
